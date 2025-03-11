@@ -1,32 +1,49 @@
 #include <stdio.h>
 
-// Desafio de Xadrez - MateCheck
-// Este código inicial serve como base para o desenvolvimento do sistema de movimentação das peças de xadrez.
-// O objetivo é utilizar estruturas de repetição e funções para determinar os limites de movimentação dentro do jogo.
+int main(){
 
-int main() {
-    // Nível Novato - Movimentação das Peças
-    // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
+    // Aplicação de variáveis para nomes das peças
+    
+    int torre;
+    int bispo;
+    int rainha;
 
-    // Implementação de Movimentação do Bispo
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação do Bispo em diagonal.
+    // Início do xadrex
 
-    // Implementação de Movimentação da Torre
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Torre para a direita.
+        printf("Iniciando xarez novato...\n");
+        printf("\n=== Xadrez Novato ===\n");
 
-    // Implementação de Movimentação da Rainha
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Rainha para a esquerda.
+            // Movimento da torre
 
-    // Nível Aventureiro - Movimentação do Cavalo
-    // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
-    // Um loop pode representar a movimentação horizontal e outro vertical.
+                printf("\n- Movimento da torre -\n");
 
-    // Nível Mestre - Funções Recursivas e Loops Aninhados
-    // Sugestão: Substitua as movimentações das peças por funções recursivas.
-    // Exemplo: Crie uma função recursiva para o movimento do Bispo.
+                    for ( torre = 0; torre <= 5; torre++)
+                    {
+                        printf("Direita\n");
+                    }
 
-    // Sugestão: Implemente a movimentação do Cavalo utilizando loops com variáveis múltiplas e condições avançadas.
-    // Inclua o uso de continue e break dentro dos loops.
+            // Movimento do bispo
 
+                printf("\n- Movimento do bispo -\n");
+
+                    for (bispo = 0; bispo <= 5; bispo++)
+                    {
+                        printf("Cima, Direita\n");
+                    }
+            // Movimento da rainha
+
+                printf("\n- Movimento da rainha -\n");
+
+                    for (rainha = 0; rainha <= 8; rainha++)
+                    {
+                        printf("Esquerda\n");
+                    }
+        // Fim do xadrez
+        
+            printf("\n=== Fim do Xadrez ===\n");
+            
     return 0;
 }
+//*Torre: Move-se em linha reta horizontalmente ou verticalmente. Seu programa deverá simular o movimento da Torre cinco casas para a direita. 
+//*Bispo: Move-se na diagonal. Seu programa deverá simular o movimento do Bispo cinco casas na diagonal para cima e à direita. Para representar a diagonal, você imprimirá a combinação de duas direções a cada casa (ex: "Cima, Direita").
+//*Rainha: Move-se em todas as direções. Seu programa deverá simular o movimento da Rainha oito casas para a esquerda.
