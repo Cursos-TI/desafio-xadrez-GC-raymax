@@ -7,10 +7,12 @@ int main(){
     int torre;
     int bispo;
     int rainha;
+    int cavalo;
 
     // Início do xadrex
 
-        printf("Iniciando xarez novato...\n");
+        printf("Iniciando xadrez novato...\n");
+
         printf("\n=== Xadrez Novato ===\n");
 
             // Movimento da torre
@@ -38,6 +40,29 @@ int main(){
                     {
                         printf("Esquerda\n");
                     }
+
+            // Movimento do cavalo
+
+                printf("\n- Movimento do cavalo -\n");
+
+                    for (cavalo = 0; cavalo <= 1; cavalo++)
+                    {
+                    
+                        do
+                        {
+                            printf("Baixo\n");
+
+                        } while (cavalo > 1);
+                    
+                    }
+                    
+                    for (cavalo = 2; cavalo <= 2; cavalo++)
+                    {
+
+                        printf("Esquerda\n");
+
+                    }
+                    
         // Fim do xadrez
         
             printf("\n=== Fim do Xadrez ===\n");
