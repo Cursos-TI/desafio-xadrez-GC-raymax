@@ -1,5 +1,54 @@
 #include <stdio.h>
 
+    // Aplicação da recursividade para torre
+
+        void torre_mov(int torre){
+            if (torre > 0)
+            {
+                printf("Direita\n");
+                torre_mov(torre - 1);
+            }
+        
+        }
+
+    // Aplicação da recursividade para bispo
+        
+        void bispo_mov(int bispo){
+            if (bispo > 0)
+            {
+                printf("Cima, Direita\n");
+                bispo_mov(bispo - 1);
+            }
+            
+        }
+        
+    // Aplicação da recursividade para rainha
+
+        void rainha_mov(int rainha){
+            if (rainha > 0)
+            {
+                printf("Esquerda\n");
+                rainha_mov(rainha - 1);
+            }
+            
+        }
+
+    // Aplicação da recursividade para cavalo
+
+        void cavalo_mov(int cavalo){
+            if (cavalo > 0)
+            {
+                printf("Cima\n");
+                cavalo_mov(cavalo - 1);
+                
+            }
+            
+            if (cavalo == 0)
+                {
+                    printf("Direita\n");
+                    cavalo_mov(cavalo - 1);
+                }
+        }
 int main(){
 
     // Aplicação de variáveis para nomes das peças
@@ -19,49 +68,25 @@ int main(){
 
                 printf("\n- Movimento da torre -\n");
 
-                    for ( torre = 0; torre <= 5; torre++)
-                    {
-                        printf("Direita\n");
-                    }
+                    torre_mov(5);
 
             // Movimento do bispo
 
                 printf("\n- Movimento do bispo -\n");
 
-                    for (bispo = 0; bispo <= 5; bispo++)
-                    {
-                        printf("Cima, Direita\n");
-                    }
+                    bispo_mov(5);    
+
             // Movimento da rainha
 
                 printf("\n- Movimento da rainha -\n");
 
-                    for (rainha = 0; rainha <= 8; rainha++)
-                    {
-                        printf("Esquerda\n");
-                    }
+                    rainha_mov(8);
 
             // Movimento do cavalo
 
                 printf("\n- Movimento do cavalo -\n");
 
-                    for (cavalo = 0; cavalo <= 1; cavalo++)
-                    {
-                    
-                        do
-                        {
-                            printf("Baixo\n");
-
-                        } while (cavalo > 1);
-                    
-                    }
-                    
-                    for (cavalo = 2; cavalo <= 2; cavalo++)
-                    {
-
-                        printf("Esquerda\n");
-
-                    }
+                    cavalo_mov(2);
                     
         // Fim do xadrez
         
